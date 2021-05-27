@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 10px 20px;
+  background-color: firebrick;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+section {
+  padding: 15px;
+}
+
+.contents{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.bar, .line, .doughnut{
+  border: 1px solid gray;
+}
