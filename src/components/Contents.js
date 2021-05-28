@@ -51,9 +51,9 @@ const Contents = () => {
                         label: "국내 누적확진자",
                         backgroundColor: "salmon",
                         fill: true,
-                        data: arr.map(a => a.confirmed)
+                        data: arr.map(a => a.confirmed),
                     },
-                ]
+                ],
             })
             setQuarantinedData({
                 labels,
@@ -71,7 +71,6 @@ const Contents = () => {
                 labels: ["확진자", "격리해제", "사망"],
                 datasets: [
                     {
-                        label: "누적 확진, 해제, 사망 비율",
                         backgroundColor: ["navy", "skyblue", "gray"],
                         borderColor: ["navy", "skyblue", "gray"],
                         fill: false,
@@ -87,33 +86,56 @@ const Contents = () => {
 
     return (
         <section>
-            <h2>국내 코로나 현황</h2>
-                <div className="contents">
-                    <div className="bar">
-                        <Bar data={confirmedData} width={300} height={400} options={
-                            { title: { display: true, text: "누적 확진자 추이", fontSize:16 } },
-                            { legend: { display: true, position: "bottom"} },
-                            { maintainAspectRatio: false }
+            <div className="bar-contents">
+                <h2>국내 코로나 현황</h2>
+                <div className="bar">
+                    <Bar data={confirmedData} width={1000} height={400} options={
+                        {
+                            plugins: {
+                            legend: { display: true, position: "bottom"},
+                            title: { display: true, text: "누적 확진자 추이", fontSize:16 }
+                            },
+                            maintainAspectRatio: false
                         }
-                        />
-                    </div>
-                    <div className="line">
-                        <Line data={quarantinedData} width={300} height={400} options={
-                            { title: { display: true, text: "월별 격리자 현황", fontSize:16 } },
-                            { legend: { display: true, position: "bottom"} },
-                            { maintainAspectRatio: false }
-                        }
-                        />
-                    </div>
-                    <div className="doughnut">
-                        <Doughnut data={comparedData} width={300} height={400} options={
-                            { title: { display: true, text: `누적 확진, 해제, 사망(${new Date().getMonth() + 1} 월)`, fontSize:16 } },
-                            { legend: { display: true, position: "bottom"} },
-                            { maintainAspectRatio: false }
-                        }
-                        />
-                    </div>
+                    }
+                    />
                 </div>
+            </div>
+            <div className="line-contents">
+                <div className="line">
+                    <Line data={quarantinedData} width={1000} height={400} options={
+                        {
+                            plugins: {
+                            legend: { display: true, position: "bottom"},
+                            title: { display: true, text: "월별 격리자 현황", fontSize:16 }
+                            },
+                            maintainAspectRatio: false
+                        }
+                    }
+                    />
+                </div>
+            </div>
+            <div className="doughnut-contents">
+                <div className="doughnut">
+                    <Doughnut data={comparedData} width={1000} height={400} options={
+                        {
+                            plugins: {
+                            legend: { display: true, position: "bottom"},
+                            title: { display: true, text: "누적 확진, 격리 해제, 사망", fontSize:16 }
+                            },
+                            maintainAspectRatio: false
+                        }
+                    }
+                    />
+                </div>
+            </div>
+            <h2 style={{textAlign: "center"}}>예방 행동수칙 및 사회적 거리두기</h2>
+            <div className="poster">
+                <div className="poster-box">
+                </div>
+                <div className="distance-box">
+                </div>
+            </div>
         </section>
     )
 }

@@ -15,15 +15,39 @@
   color: white;
 }
 
-section {
-  padding: 15px;
+.bar-contents, .line-contents, .doughnut-contents, .poster{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.contents{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+.bar-contents{
+  background-color: #FFFFF7;
+  padding: 0 30px 30px 30px;
 }
-.bar, .line, .doughnut{
-  border: 1px solid gray;
+.line-contents{
+  background-color: #F2FFED;
+  padding: 30px;
+}
+.doughnut-contents{
+  background-color: #F8FFFF;
+  padding: 30px;
+}
+.poster{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.poster-box{
+  width: 580px;
+  height: 820px;
+  background-image: url(./images/covid-19.jpg);
+  background-size: 100% 100%;
+  margin: 0 40px;
+}
+.distance-box{
+  width: 750px;
+  height: 820px;
+  background-image: url(./images/distance.jpg);
+  background-size: 100% 100%;
 }
