@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Bar, Doughnut, Line } from 'react-chartjs-2'
 import axios from 'axios'
+import { Linking } from 'react-native'
 
 const Contents = () => {
 
@@ -87,7 +88,7 @@ const Contents = () => {
     return (
         <section>
             <div className="bar-contents">
-                <h2>국내 코로나 현황</h2>
+                <p style={{fontSize: 32, fontWeight: 'bold'}}>국내 코로나 현황</p>
                 <div className="bar">
                     <Bar data={confirmedData} width={1000} height={400} options={
                         {
@@ -129,12 +130,17 @@ const Contents = () => {
                     />
                 </div>
             </div>
-            <h2 style={{textAlign: "center"}}>예방 행동수칙 및 사회적 거리두기</h2>
             <div className="poster">
+            <p style={{textAlign: "center", fontSize: 32, fontWeight: 'bold'}}>코로나 예방 행동수칙 및 단계별 사회적 거리두기</p>
                 <div className="poster-box">
                 </div>
                 <div className="distance-box">
                 </div>
+            </div>
+            <div className="call">
+                <p onPress={() => Linking.openURL("https://www.mohw.go.kr/react/popup_200128.html")}>
+                    국민안심병원 현황
+                </p>
             </div>
         </section>
     )
