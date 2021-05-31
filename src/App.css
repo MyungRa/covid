@@ -45,9 +45,26 @@
   background-size: 100% 100%;
   margin: 0 40px;
 }
-.distance-box{
-  width: 750px;
+.mask-box{
+  width: 650px;
   height: 820px;
-  background-image: url(./images/distance.jpg);
+  background-image: url(./images/mask.jpg);
   background-size: 100% 100%;
+}
+.call {
+  position: relative;
+  top: 50%;
+  left: 46.5%;
+  padding-bottom: 20px;
+}
+.contacts-container{
+  width: 100%;
+  height: 100px;
+  background-color: #747474;
+}
+.contacts {
+  color: white;
+  position: relative;
+  top: 20%;
+  left: 45%;
 }

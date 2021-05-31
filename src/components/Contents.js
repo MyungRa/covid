@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Bar, Doughnut, Line } from 'react-chartjs-2'
 import axios from 'axios'
-import { Linking } from 'react-native'
 
 const Contents = () => {
 
@@ -130,17 +129,26 @@ const Contents = () => {
                     />
                 </div>
             </div>
+            <p style={{textAlign: "center", fontSize: 32, fontWeight: 'bold'}}>코로나 예방 행동수칙</p>
             <div className="poster">
-            <p style={{textAlign: "center", fontSize: 32, fontWeight: 'bold'}}>코로나 예방 행동수칙 및 단계별 사회적 거리두기</p>
                 <div className="poster-box">
                 </div>
-                <div className="distance-box">
+                <div className="mask-box">
                 </div>
             </div>
             <div className="call">
-                <p onPress={() => Linking.openURL("https://www.mohw.go.kr/react/popup_200128.html")}>
+                <span style={{fontSize: 20}}>😷</span>
+                <a style={{fontSize: 20, fontWeight: 'bold'}} href="https://www.mohw.go.kr/react/popup_200128.html">
                     국민안심병원 현황
-                </p>
+                </a><br />
+                <span style={{fontSize: 20}}>😷</span>
+                <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.mohw.go.kr/react/index.jsp">
+                    보건복지부
+                </a><br />
+                <span style={{fontSize: 20}}>😷</span>
+                <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.kdca.go.kr/index.es?sid=a2">
+                    질병관리청
+                </a>
             </div>
         </section>
     )
