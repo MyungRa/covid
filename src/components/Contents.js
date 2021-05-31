@@ -136,19 +136,28 @@ const Contents = () => {
                 <div className="mask-box">
                 </div>
             </div>
+            <p style={{textAlign: "center", fontSize: 32, fontWeight: 'bold'}}>관련 기관</p>
             <div className="call">
-                <span style={{fontSize: 20}}>😷</span>
-                <a style={{fontSize: 20, fontWeight: 'bold'}} href="https://www.mohw.go.kr/react/popup_200128.html">
-                    국민안심병원 현황
-                </a><br />
-                <span style={{fontSize: 20}}>😷</span>
-                <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.mohw.go.kr/react/index.jsp">
-                    보건복지부
-                </a><br />
-                <span style={{fontSize: 20}}>😷</span>
-                <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.kdca.go.kr/index.es?sid=a2">
-                    질병관리청
-                </a>
+                <ul className="call-list">
+                    <li>
+                        😷
+                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="https://www.mohw.go.kr/react/popup_200128.html">
+                        국민안심병원 현황
+                        </a>
+                    </li>
+                    <li>
+                        😷
+                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.mohw.go.kr/react/index.jsp">
+                        보건복지부
+                        </a>
+                    </li>
+                    <li>
+                        😷
+                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.kdca.go.kr/index.es?sid=a2">
+                        질병관리청
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     )

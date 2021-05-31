@@ -52,19 +52,23 @@
   background-size: 100% 100%;
 }
 .call {
-  position: relative;
-  top: 50%;
-  left: 46.5%;
-  padding-bottom: 20px;
+  width: 240px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
-.contacts-container{
-  width: 100%;
-  height: 100px;
-  background-color: #747474;
+.call-list {
+  list-style: none;
 }
 .contacts {
+  background-color: #747474;
+}
+.contacts-container {
+  width: 270px;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.contacts-list {
   color: white;
-  position: relative;
-  top: 20%;
-  left: 45%;
+  list-style: none;
 }
