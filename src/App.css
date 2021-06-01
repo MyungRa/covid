@@ -5,6 +5,8 @@
 
 .header {
   padding: 10px 20px;
+  position: sticky;
+  top: 0;
   background-color: firebrick;
   display: flex;
   justify-content: space-between;
