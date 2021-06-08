@@ -141,19 +141,19 @@ const Contents = () => {
                 <ul className="call-list">
                     <li>
                         😷
-                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="https://www.mohw.go.kr/react/popup_200128.html">
+                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="https://www.mohw.go.kr/react/popup_200128.html" target="_blank">
                         국민안심병원 현황
                         </a>
                     </li>
                     <li>
                         😷
-                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.mohw.go.kr/react/index.jsp">
+                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.mohw.go.kr/react/index.jsp" target="_blank">
                         보건복지부
                         </a>
                     </li>
                     <li>
                         😷
-                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.kdca.go.kr/index.es?sid=a2">
+                        <a style={{fontSize: 20, fontWeight: 'bold'}} href="http://www.kdca.go.kr/index.es?sid=a2" target="_blank">
                         질병관리청
                         </a>
                     </li>
